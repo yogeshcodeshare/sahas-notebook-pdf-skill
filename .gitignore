@@ -1,0 +1,4 @@
+*_preview/
+.*.build.html
+__pycache__/
+_drafts/

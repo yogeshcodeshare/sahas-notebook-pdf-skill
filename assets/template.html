@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Notebook notes — starter</title>
+<!-- render with: python scripts/render.py this-file.html --png   (CSS, JS, fonts and logos are injected) -->
+</head>
+<!-- Sahas defaults: Patrick Hand body text, brown horizontal logo badge on inner pages.
+     Theme: Light mode = class="body-patrick" · Dark mode = class="body-patrick theme-dark" (dark brown, gold + cream).
+     Language: English / Hinglish / Marathi — see references/languages.md (set <html lang> and data-swipe).
+     data-format: carousel | square | a4 | flow -->
+<body class="body-patrick" data-format="carousel" data-brand="Sahas AI" data-logo="brown" data-footer="dots+swipe">
+
+<!-- 1 · COVER — centred, stacked DARK logo, no badge -->
+<section class="page center cover-center no-brand">
+  <div class="logo-stacked dark"></div>
+  <p class="kicker">Kicker line</p>
+  <h1 class="title xl">Document Title Goes Here</h1>
+  <div class="wave"></div>
+  <p class="subtitle">One-line promise of what the reader gets — a complete guide</p>
+  <div class="chips"><span>Topic one</span><span>Topic two</span><span>Topic three</span></div>
+  <hr class="rule mt2">
+  <p class="takeaway">No theory. Only what actually works.</p>
+</section>
+
+<!-- 2 · INNER PAGE — plain text + one coloured box -->
+<section class="page">
+  <div class="tab">✎ Section name</div>
+  <p class="kicker">Method 1</p>
+  <h2><span>Section heading</span></h2>
+  <p>Intro line in red with one <span class="k">keyword</span> underlined — and an em-dash aside.</p>
+  <div class="callout"><span class="ring">Big idea</span><span class="arrow"></span><span class="said">The single most important statement on the page.</span></div>
+  <ol class="steps">
+    <li><h3>Step title <small>(tag)</small></h3><p>What to do — <span class="k">the condition</span> that matters.</p></li>
+    <li><h3>Second step</h3><p>Short, practical, one line if possible.</p></li>
+  </ol>
+  <ul class="dash">
+    <li><span class="k">Keyword</span> — plain consequence or example</li>
+    <li>Normal list items stay plain: no icons, no box</li>
+  </ul>
+  <div class="note tip"><span class="label">Tip:</span> coloured box only for genuinely important points (tip / good / warn / info / money / fact).</div>
+</section>
+
+<!-- 3 · INNER PAGE — flow with icons + table (no red text inside tables and flows) -->
+<section class="page">
+  <div class="tab">✎ Diagrams</div>
+  <h2><span>Flow with icons</span></h2>
+  <div class="flow steps-flow">
+    <div class="box step s-green" data-n="1"><div class="ic"><i class="logo whatsapp"></i><i class="logo instagram"></i></div><span class="t">Lead comes in</span><span class="d">WhatsApp · Insta</span></div>
+    <div class="arr a-green"></div>
+    <div class="box step s-blue" data-n="2"><div class="ic"><span class="emo">🤖</span></div><span class="t">AI replies</span><span class="d">in seconds</span></div>
+    <div class="arr a-blue"></div>
+    <div class="box step s-purple" data-n="3"><div class="ic"><span class="emo">📋</span></div><span class="t">CRM</span><span class="d">follow-up</span></div>
+    <div class="arr a-purple"></div>
+    <div class="box step s-orange" data-n="4"><div class="ic"><span class="emo">🤝</span></div><span class="t">Human closes</span><span class="d">hot leads only</span></div>
+  </div>
+  <div class="callout"><span class="ring fill"><span class="emo">📞</span> Voice AI</span><span class="arrow squiggle"></span><span class="said">A filled ring with ONE meaningful icon.</span></div>
+  <table class="ink">
+    <tr><th></th><th class="th-red">Old way</th><th class="th-green">New way</th></tr>
+    <tr><td>Sells</td><td>A chatbot</td><td>An outcome</td></tr>
+    <tr><td>Earns</td><td>One-time fee</td><td>Setup + <span class="k">monthly</span></td></tr>
+  </table>
+  <div class="vs">
+    <div class="box red fill-red"><span class="t">Before</span><span class="d">manual, slow</span></div>
+    <div class="mid">vs</div>
+    <div class="box green fill-green"><span class="t">After</span><span class="d">automatic, instant</span></div>
+  </div>
+</section>
+
+<!-- LAST · THANK-YOU — dark page, stacked CREAM logo, round seal, full agency name -->
+<section class="page center dark-page no-brand">
+  <div class="logo-stacked cream center"></div>
+  <h1 class="title xl center-t">Thank you!</h1>
+  <div class="wave short" style="margin-left:auto;margin-right:auto"></div>
+  <p class="subtitle center-t">Save this, and share it with someone who needs it.</p>
+  <hr class="rule mt2">
+  <div class="thanks-row" style="justify-content:center">
+    <div class="seal"></div>
+    <p class="mb0"><span class="k">Sahas AI Business Automation Agency</span><br>More notes like this, every week.</p>
+  </div>
+</section>
+
+</body>
+</html>
